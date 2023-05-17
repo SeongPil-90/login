@@ -1,4 +1,16 @@
 "use strict";
 
-console.log("login");
-console.log("login22");
+const id = document.querySelector("#id"),
+pw = document.querySelector("#pw"),
+loginBtn = document.querySelector("#loginBtn");
+
+loginBtn.addEventListener("click", login);
+
+function login() {
+    const req = {
+        id: id.value,
+        pw: pw.value,
+    };
+
+    console.log(req);
+}
